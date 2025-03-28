@@ -1,5 +1,5 @@
 import React from "react";
-import { AuthScreen } from "./components/auth-screen";
+import { AuthScreen } from "./auth-screen";
 
 const SignIn = () => {
   return <AuthScreen />;

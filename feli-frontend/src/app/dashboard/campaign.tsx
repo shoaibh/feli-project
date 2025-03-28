@@ -1,6 +1,6 @@
 import React from "react";
-import { CampaignDataType } from "../../types/Campaign";
-import { Circle } from "../../components/circle";
+import { CampaignDataType } from "../types/Campaign";
+import { Circle } from "../components/circle";
 
 export const Campaign = ({ campaign }: { campaign: CampaignDataType }) => {
   const stats = [

@@ -1,5 +1,6 @@
-import Campaign from "../models/campaign.model";
 import mongoose from "mongoose";
+
+import Campaign from "../models/campaign.model";
 
 export const createDummyCampaign = async (userId: mongoose.Types.ObjectId) => {
   const campaign = new Campaign({

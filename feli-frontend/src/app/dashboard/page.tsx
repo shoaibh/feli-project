@@ -1,4 +1,4 @@
-import { Campaign } from "./components/campaign";
+import { Campaign } from "./campaign";
 import { CampaignDataType } from "../types/Campaign";
 import { callApiFromServer } from "../utils/callApiFromServer";
 import { CustomButton } from "../components/custom-button";

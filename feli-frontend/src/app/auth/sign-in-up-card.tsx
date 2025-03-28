@@ -67,7 +67,7 @@ export const SignInUpCard = ({
         <CustomButton
           type="submit"
           label={
-            isLoading ? "Processing..." : showLoginScreen ? "Log In" : "Sign Up"
+            isLoading ? "Loading..." : showLoginScreen ? "Log In" : "Sign Up"
           }
           isLoading={isLoading}
           className="bg-[#FF0016] cursor-pointer py-5 w-[70%] m-auto rounded-sm text-[#DDD7E6] hover:text-white text-2xl font-semibold disabled:opacity-50"
