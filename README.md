@@ -4,12 +4,20 @@ Welcome to the **Feli Project**. This repository contains both the frontend and 
 
 ## Table of Contents
 
+- [Video Showcasing the Result](#video-showcasing-the-result)
 - [Project Structure](#project-structure)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
   - [Backend Setup](#backend-setup)
   - [Frontend Setup](#frontend-setup)
 - [API Routes](#api-routes)
+
+## Video Showcasing the Result
+
+
+https://github.com/user-attachments/assets/7e443bdb-a015-40cd-9b12-453589f5dd95
+
+
 
 ## Project Structure
 
