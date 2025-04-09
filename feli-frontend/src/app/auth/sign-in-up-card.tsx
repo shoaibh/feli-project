@@ -44,7 +44,7 @@ export const SignInUpCard = ({
 
   return (
     <form onSubmit={onSubmit}>
-      <h3 className="font-semibold py-3 text-2xl text-[#DDD7E6] border-b border-[#55476A]">
+      <h3 className="font-semibold py-5 text-2xl text-[#DDD7E6] border-b border-[#55476A]">
         {showLoginScreen ? "Sign In To Your Account" : "Create Your Account"}
       </h3>
 
@@ -56,24 +56,24 @@ export const SignInUpCard = ({
           value={formData[field as keyof typeof formData]}
           onChange={handleChange}
           required
-          className="w-full text-2xl py-3 px-8 text-[#87968C] outline-none border-b border-[#55476A] mt-4 placeholder-[#87968C] font-medium"
+          className="w-full text-2xl py-5 px-9 text-[#87968C] outline-none border-b border-[#55476A] placeholder-[#87968C] font-medium"
           placeholder={field.toUpperCase()}
         />
       ))}
 
       {error && <p className="text-red-500 text-center mt-4">{error}</p>}
 
-      <div className="text-center pt-10 pb-5 flex flex-col gap-2">
+      <div className="text-center pt-9 pb-3 flex flex-col gap-1">
         <CustomButton
           type="submit"
           label={
             isLoading ? "Loading..." : showLoginScreen ? "Log In" : "Sign Up"
           }
           isLoading={isLoading}
-          className="bg-[#FF0016] cursor-pointer py-5 w-[70%] m-auto rounded-sm text-[#DDD7E6] hover:text-white text-2xl font-semibold disabled:opacity-50"
+          appearance="primary"
         />
         <CustomButton
-          className="text-[#87968C] cursor-pointer hover:text-[#bcc5bf] text-[18px] font-medium"
+          appearance="secondary"
           onClick={() => {
             setShowLoginScreen(!showLoginScreen);
           }}

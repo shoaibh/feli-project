@@ -11,21 +11,21 @@ const Header = () => {
 
   return (
     <header className="fixed flex items-center bg-[#151318] z-10 justify-between w-full h-16 px-5 border-b border-[#55476A]">
-      <div className="flex items-center gap-3">
-        <div className="flex flex-col justify-between h-5 cursor-pointer space-y-1.5">
+      <div className="flex items-center gap-4">
+        <div className="flex flex-col justify-between h-5 cursor-pointer ">
           {[...Array(3)].map((_, i) => (
-            <span key={i} className="w-6 h-0.5 bg-[#55476A] rounded"></span>
+            <span key={i} className="w-6 h-[3px] bg-[#55476A] rounded"></span>
           ))}
         </div>
 
         <div className="flex items-center gap-1">
           <Image src="/feli-logo.svg" width={27} height={30} alt="logo" />
-          <Image src="/feli-name-logo.svg" width={55} height={40} alt="logo" />
+          <Image src="/feli-name-logo.svg" width={46} height={40} alt="logo" />
         </div>
       </div>
 
       {isDashboard && (
-        <div className="flex items-center gap-5">
+        <div className=" items-center gap-5 hidden xl:flex">
           <div className="flex items-center gap-2">
             <Circle size="18" color="#8CB7F9" />
             <p className="text-[#8CB7F9] font-medium text-lg">

@@ -21,7 +21,8 @@ export default function SettingsPage() {
     <div className="grid min-h-[calc(100vh-4rem)] place-items-center">
       <CustomButton
         onClick={onClick}
-        className="bg-[#FF0016]  cursor-pointer py-5 px-7 m-auto rounded-sm text-[#DDD7E6] text-2xl font-semibold"
+        appearance="primary"
+        className="py-5 px-7 m-auto text-[#DDD7E6] w-[400px]"
         label="Logout"
       />
     </div>

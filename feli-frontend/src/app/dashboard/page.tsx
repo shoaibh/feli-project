@@ -13,24 +13,25 @@ const DashboardPage = async () => {
 
   return (
     <div className="overflow-scroll max-h-[calc(100vh-4rem)]">
-      <section className="p-4 flex justify-between items-center border-b border-solid border-b-[#55476A]">
+      <section className="px-4 py-3 flex justify-between items-center border-b border-solid border-b-[#55476A]">
         <div>
-          <h2 className="text-[#4AFF8A] text-[32px] font-semibold">
+          <h2 className="text-[#4AFF8A] text-[32px] leading-9 font-semibold">
             DASHBOARD
           </h2>
-          <p className="text-[#87968C] text-[18px] font-medium">
+          <p className="text-[#87968C] text-[18px] leading-6 font-medium">
             Watch the performance of your omni-channel campaigns
           </p>
         </div>
         <div>
           <CustomButton
-            className="bg-[#FF0016] cursor-pointer py-5 px-7 m-auto rounded-sm text-white text-2xl font-semibold"
+            appearance="primary"
+            className="w-full px-12 m-auto text-white "
             label="Start New Campaign"
             type="button"
           />
         </div>
       </section>
-      <div className="flex gap-5 flex-wrap py-7 px-5 overflow-scroll">
+      <div className="flex gap-5 flex-wrap py-9 px-5 overflow-scroll">
         {campaigns?.map((campaign) => (
           <Campaign key={campaign._id} campaign={campaign} />
         ))}

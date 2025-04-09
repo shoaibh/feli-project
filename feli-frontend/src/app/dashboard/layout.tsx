@@ -28,7 +28,7 @@ export default function DashboardLayout({
 
   return (
     <div className="flex pt-16 min-h-[calc(100vh-4rem)]">
-      <div className="flex-1 flex flex-col max-w-[340px] gap-3 pt-3 w-full border-r border-solid border-[#55476A]">
+      <div className="flex-1  flex-col max-w-[340px] gap-3 pt-3 w-full border-r border-solid border-[#55476A] hidden xl:flex ">
         {sidebarNavs.map((nav) => (
           <SideBarNav
             key={nav.link}
